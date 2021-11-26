@@ -90,7 +90,7 @@ function mousePressed() {
  * 
  * @returns If the object is currently draggable
  */
-function checkDraggable () {
+function checkDraggable (rects) {
 	let draggable = true
 	for (let i=0;i<rects.length;i++) {
 		if (rects[i].drag == true) {

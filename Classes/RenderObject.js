@@ -36,8 +36,8 @@
 	 * @returns If the point collided with the object
 	 */
 	collidepoint(x, y) {
-		if (x > this.left && x < this.right){
-			if (y > this.top && y < this.bottom) {
+		if (x >= this.left && x <= this.right){
+			if (y >= this.top && y <= this.bottom) {
 				return true
 			}
 		}
